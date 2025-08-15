@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redelong Institute Berkelanjutan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b3d2e;
+      color: white;
+    }
+    header {
+      background-color: #145a3f;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #32cd74;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(#145a3f, #0b3d2e);
+    }
+    .hero h2 {
+      font-size: 20px;
+      color: #b5d9c5;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 38px;
+      margin: 10px 0;
+      font-weight: bold;
+      animation: slideIn 1s ease-in-out;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #d9f0e5;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .hero button {
+      background-color: #32cd74;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .hero button:hover {
+      background-color: #28a863;
+      transform: scale(1.05);
+    }
+    .landscape {
+      height: 200px;
+      background: url('https://i.ibb.co/Fm1ZPtR/forest-landscape.png') no-repeat center/cover;
+    }
+    section {
+      padding: 40px;
+      line-height: 1.6;
+    }
+    #about {
+      background-color: #145a3f;
+    }
+    #contact {
+      background-color: #0b3d2e;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Logo REDELONG -->
+  <img src="https://i.ibb.co/dPgzWqj/redelong-logo.png" alt="Logo REDELONG">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>PENGENALAN</h2>
+  <h1>REDELONG INSTITUTE BERKELANJUTAN</h1>
+  <p>Konservasi hutan lindung, perlindungan satwa, sekolah alam, dan pengembangan wisata berbasis masyarakat di Bener Meriah.</p>
+  <button onclick="window.location.href='#about'">MULAI SEKARANG</button>
+</section>
+
+<div class="landscape"></div>
+
+<section id="about">
+  <h2>Tentang Kami</h2>
+  <p>
+    Redelong Institute Berkelanjutan adalah lembaga yang fokus pada pelestarian hutan lindung Gunung Gerdong,
+    mitigasi konflik manusia dan gajah, serta pemberdayaan masyarakat melalui pendidikan lingkungan dan wisata alam.
+    Kami mengembangkan konsep perhutanan sosial, budidaya tanaman ramah satwa, serta edukasi ekosistem untuk generasi muda.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Kontak</h2>
+  <p>Email: info@redelonginstitute.org</p>
+  <p>Telepon: +62 812 3456 7890</p>
+</section>
+
+</body>
+</html>
